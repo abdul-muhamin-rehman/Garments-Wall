@@ -1,0 +1,43 @@
+@import "src/theme/colors.scss";
+
+.panel-heading {
+  font-size: 16px;
+  font-weight: 300;
+  color: $black;
+  background-color: $white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fa-user svg {
+  width: 1rem;
+  height: 2rem;
+}
+
+.panel-body {
+  padding: 10px;
+  font-size: 13px;
+}
+
+b, strong {
+  font-weight: bold;
+}
+
+.activity-content {
+  padding-bottom: 10px;
+  display: flex;
+  border-bottom: 1px solid $smoky-white;
+  border-left: 4px solid transparent;
+}
+
+.content {
+  padding-left: 20px;
+}
+
+.activity-content:hover {
+  background-color: $light-gray;
+  border-left: 4px solid $sea-green !important;
+}

@@ -1,0 +1,144 @@
+@import "src/theme/colors.scss";
+
+//---------------Post css
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-body {
+  padding-left: 15px;
+}
+
+.post-files {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.pull-left img {
+  width: 40px;
+  height: 40px;
+  border: 1px solid $zircon;
+  box-shadow: 0 1px 1px 0 $eclipse;
+  margin-top: 8px;
+}
+
+.commentContianer {
+  padding-left: 1rem;
+}
+
+.likeLinkContainer {
+  padding-left: 1rem;
+}
+
+
+
+.post-controls a {
+  font-size: 11px;
+  color: $TropicalLagoon !important;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.flex-container > div {
+  background-color: $white;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-bottom: 1px solid $offwhite;
+  padding: 2px;
+}
+
+.insideheader {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1px;
+  margin-bottom: 3px;
+  overflow: hidden !important;
+  font-size: 13px;
+}
+
+.spaces {
+  display: flex;
+  flex-direction: row;
+}
+
+.time {
+  margin-left: 4px;
+}
+
+.users {
+  margin-left: 10px;
+}
+
+.name {
+  font-size: 21px;
+}
+
+.attach svg {
+  vertical-align: middle;
+  color: $white;
+}
+
+.send svg {
+  vertical-align: middle;
+  color: $white;
+}
+
+
+.postimg {
+  width: 250px;
+  height: 210px;
+  margin-top: -11px;
+  border: 1px solid $zircon;
+  box-shadow: 0 4px 8px 0 $eclipse;
+}
+
+.parent {
+  background-color: $WhiteSmoke;
+  box-shadow: $TropicalLagoon;
+  padding: 6px;
+  border-radius: 6px;
+}
+
+.send {
+  padding: 2px;
+}
+
+.attach {
+  padding: 2px;
+}
+
+.flex-body-comment {
+  display: flex;
+  flex-direction: row;
+  border: $black;
+}
+
+input.comment:focus {
+  outline: none !important;
+  border: 2px solid $TropicalLagoon;
+  box-shadow: none;
+}
+
+input.comment {
+  outline: none !important;
+  border: 2px solid $TropicalLagoon;
+  box-shadow: none;
+  border-radius: 7px;
+}
+
+.attachment-btn:hover {
+  background-color: $TropicalLagoon;
+  color: $TropicalLagoon;
+}
+
+.attachment-btn {
+  background-color: $TropicalLagoon;
+  border: none;
+  border-radius: 4px;
+  padding: 6px;
+}

@@ -1,0 +1,51 @@
+@import "src/theme/colors.scss";
+
+.panel-heading {
+    font-size: 16px;
+    font-weight: 300;
+    color: $black;
+    background-color: $white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+}
+
+li{
+  display: flex;
+  align-items: center;
+}
+
+ul.tour-list {
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 10px;
+}
+
+.ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+.fa-playCircle svg {
+  padding: 1px;
+  margin-right: 2px;
+}
+
+.down-arrow:hover {
+  background-color: $off-white;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+b, strong {
+  font-weight: bold;
+}

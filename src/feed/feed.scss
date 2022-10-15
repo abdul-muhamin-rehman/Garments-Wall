@@ -1,0 +1,23 @@
+@import "src/theme/colors.scss";
+.post-container{
+  min-width: max-content;
+}
+.card {
+  margin-bottom: 15px;
+  padding-bottom: 12px;
+}
+
+.latest-activities {
+  margin-top: 4px;
+}
+
+.wall {
+  background-image: $dark-light-blue;
+  padding-top: 24px;
+}
+
+.row {
+  margin-left: 79px;
+  margin-right: 133px;
+}
+

@@ -9,7 +9,7 @@ import { EditUser } from './containers/Auth/editUser';
 import { ForgotPassword } from './containers/ForgotPassword/forgotPassword';
 import SignUp from './containers/Auth/signup';
 import Feed from '../src/feed/Feed';
-import PublicLayout from './containers/PublicLayout';
+import PublicLayout from './containers/LandingPage';
 import { AuthProvider } from './Auth';
 import { RequireAuth } from './RequireAuth';
 

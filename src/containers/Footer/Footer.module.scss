@@ -1,11 +1,11 @@
 @import '../../theme/colors.scss';
 .footer {
-	min-width: 100vw;
-	min-height: 10vh;
-	background-image: repeating-linear-gradient(to right, $electricBlue, $cyanSky);
-	position: fixed;
-	left: 0;
-	bottom: 0;
+	border: 5px;
 	width: 100%;
+	height: 10vh;
+	background-image: repeating-linear-gradient(to right, $electricBlue, $cyanSky, $royal-Lavender);
+	position: relative;
+	left: 0;
+	top: 100vh;
 	bottom: 0;
 }

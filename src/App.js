@@ -28,7 +28,6 @@ function App() {
 					<Route path="/forgotpassword" element={<ForgotPassword />} />
 					<Route path="/signup" element={<SignUp />} />
 					<Route path="/login" element={<Login />} />
-					{/* <Route path="/dashboard" element={<Dashboard />} /> */}
 					<Route
 						path="/dashboard"
 						element={
@@ -37,15 +36,6 @@ function App() {
 							</RequireAuth>
 						}
 					/>
-					{/* <Route
-						path="/dasboard"
-						element={
-							<RequireAuth>
-								<Dashboard />
-							</RequireAuth>
-						}
-					/> */}
-
 					<Route path="/users" element={<Users />} />
 					<Route path="/edit" element={<EditUser />} />
 				</Routes>
@@ -53,5 +43,4 @@ function App() {
 		</AuthProvider>
 	);
 }
-
 export default App;

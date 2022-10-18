@@ -1,20 +1,33 @@
 @import '../../theme/colors.scss';
-* {
-	text-align: center;
+
+div {
+	:any-link {
+		color: $whiteSmoke;
+		margin-right: 30px;
+	}
+}
+Navbar {
+	color: $whiteSmoke;
 }
 
 .navbarLandPage {
-	background-color: $cyanBlue;
-	background-image: repeating-linear-gradient(to right, $trustBlue, $electricBlue);
-	position: fixed;
+	color: $whiteSmoke;
+	background-image: repeating-linear-gradient(
+		to right,
+		$trustBlue,
+		$electricBlue,
+		$trustBlue,
+		$cyanSky,
+		$electricBlue
+	);
+	position: sticky;
 	top: 0;
 	width: 100%;
-	height: 15vh;
+	height: 10vh;
+	margin: 0 auto;
+	margin-bottom: 1rem;
 }
 a:link {
 	color: white;
 	text-decoration: none;
-}
-Navbar a:link {
-	padding-left: 10px;
 }

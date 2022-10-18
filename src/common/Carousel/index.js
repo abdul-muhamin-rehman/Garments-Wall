@@ -12,6 +12,10 @@ import Windows from '../../assests/Carousel_List/Windows.jpg';
 export default function Carousel() {
 	const settings = {
 		dots: true,
+		autoplay: true,
+		autoplaySpeed: 3000,
+		pauseOnHover: true,
+		pauseOnFocus: true,
 		infinite: true,
 		speed: 500,
 		slidesToShow: 1,

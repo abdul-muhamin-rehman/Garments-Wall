@@ -1,12 +1,13 @@
 import { Helmet } from 'react-helmet';
-import { Link } from 'react-router-dom';
-import Container from 'react-bootstrap/Container';
-import Navbar from 'react-bootstrap/Navbar';
-import { NavbarBrand } from 'react-bootstrap';
 import Footer from '../Footer';
 import './PublicLayout.scss';
 import Carousel from '../../common/Carousel';
-export default function PublicLayout() {
+import TheNavBar from '../TheNavBar';
+import TheCards from '../TheCards';
+import SemiCarousel from '../SemiCarousel';
+import InvertedCarousel from '../InvertedCarousel';
+import CarouselCat3 from '../CarouselCat3';
+export default function index() {
 	return (
 		<>
 			<Helmet>
@@ -14,17 +15,16 @@ export default function PublicLayout() {
 				<meta name="description" content="landing_page" />
 			</Helmet>
 			<div style={{ Height: '100%', Width: '100%' }}>
-				<Navbar className="navbarLandPage  col-md-12 col-lg-12 ">
-					<Container>
-						<Navbar.Brand>Social Wall</Navbar.Brand>
-						<div className="linkSpacing">
-							<Link to="/blogs">Blogs</Link>
-							<Link to="/login">Login</Link>
-							<Link to="/signup">SignUp</Link>
-						</div>
-					</Container>
-				</Navbar>
-				<Carousel />
+				<header>
+					<TheNavBar />
+				</header>
+				<main>
+					<Carousel />
+					<TheCards />
+					<SemiCarousel />
+					<InvertedCarousel />
+					<CarouselCat3 />
+				</main>
 				<Footer />
 			</div>
 		</>

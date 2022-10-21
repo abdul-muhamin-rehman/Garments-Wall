@@ -1,33 +1,34 @@
-import React from 'react';
+import styles from './carousel.module.scss';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import styles from './carousel.module.scss';
-import dogs from '../../assests/Carousel_List/dogs.jpg';
-import Landscape from '../../assests/Carousel_List/Landscape.jpg';
-import olympics from '../../assests/Carousel_List/olympics.jpg';
-import space from '../../assests/Carousel_List/space.jpg';
-import Windows from '../../assests/Carousel_List/Windows.jpg';
+import clothesStand1 from '../../assests/Carousel_List/Garments/clothesStand1.jpg';
+import clothesStand2 from '../../assests/Carousel_List/Garments/clothesStand2.jpg';
+import outfit from '../../assests/Carousel_List/Garments/outfit.jpg';
 
 export default function Carousel() {
 	const settings = {
-		dots: true,
+		arrows: false,
+		accessibility: true,
+		fade: true,
 		autoplay: true,
-		autoplaySpeed: 3000,
+		autoplaySpeed: 2000,
+		swipe: true,
+		swipeToSlide: true,
 		pauseOnHover: true,
 		pauseOnFocus: true,
 		infinite: true,
-		speed: 500,
+		speed: 1000,
 		slidesToShow: 1,
 		slidesToScroll: 1,
 	};
-	const carouselContent = [dogs, Landscape, olympics, space, Windows];
+	const carouselContent = [outfit, clothesStand1, clothesStand2];
 	return (
-		<div className={styles.Carousel}>
+		<div className={styles.Carousel_outerDiv}>
 			<Slider {...settings}>
 				{carouselContent.map((imgs) => (
-					<div className={styles.Carousel_Image} key={imgs.toString()}>
-						<img src={imgs} />
+					<div className={styles.Carousel} key={imgs.toString()}>
+						<img className={styles.Carousel_Image} src={imgs} />
 					</div>
 				))}
 			</Slider>

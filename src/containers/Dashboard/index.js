@@ -1,4 +1,3 @@
-import React from 'react';
 import './dashboard.scss';
 import Helmet from 'react-helmet';
 import Container from 'react-bootstrap/Container';

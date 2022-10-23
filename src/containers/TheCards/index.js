@@ -1,9 +1,11 @@
 import './styles.scss';
 import { Card, CardGroup, CardImg, Container } from 'react-bootstrap';
-import green from '../../assests/colors/green.png';
-
+import grey from '../../assests/Garments/Jacket/grey.png';
+import BlackSuit from '../../assests/Garments/Suit/BlackSuit.png';
+import GoldenTrouser from '../../assests/Garments/Trouser/GoldenTrouser.png';
+import GreyTrouser from '../../assests/Garments/Trouser/GreyTrouser.png';
 export default function index() {
-	const images = [green, green, green, green];
+	const images = [grey, BlackSuit, GoldenTrouser, GreyTrouser];
 	return (
 		<Container fluid className={'Cards_outerDiv '}>
 			{images.map((imgs) => (

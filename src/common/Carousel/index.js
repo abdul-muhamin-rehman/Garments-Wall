@@ -5,7 +5,9 @@ import 'slick-carousel/slick/slick-theme.css';
 import clothesStand1 from '../../assests/Carousel_List/Garments/clothesStand1.jpg';
 import clothesStand2 from '../../assests/Carousel_List/Garments/clothesStand2.jpg';
 import outfit from '../../assests/Carousel_List/Garments/outfit.jpg';
-
+import Jackets from '../../assests/Main/Jackets.png';
+import Suits from '../../assests/Main/Suits.png';
+import Trousers from '../../assests/Main/Trousers.png';
 export default function Carousel() {
 	const settings = {
 		arrows: false,
@@ -22,7 +24,7 @@ export default function Carousel() {
 		slidesToShow: 1,
 		slidesToScroll: 1,
 	};
-	const carouselContent = [outfit, clothesStand1, clothesStand2];
+	const carouselContent = [Jackets, Suits, Trousers, outfit, clothesStand1, clothesStand2];
 	return (
 		<div className={styles.Carousel_outerDiv}>
 			<Slider {...settings}>

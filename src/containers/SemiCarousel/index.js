@@ -3,14 +3,13 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { Card, Container } from 'react-bootstrap';
-import books from '../../assests/Books/books.png';
-import books1 from '../../assests/Books/books1.png';
-import books2 from '../../assests/Books/books2.png';
-import books3 from '../../assests/Books/books3.png';
-import BigBook from '../../assests/Books/BigBook.png';
-
+import BlackSuit from '../../assests/Garments/Suit/BlackSuit.png';
+import BurgundySuit from '../../assests/Garments/Suit/BurgundySuit.png';
+import charcoalSuit from '../../assests/Garments/Suit/charcoalSuit.png';
+import GreySuit from '../../assests/Garments/Suit/GreySuit.png';
+import TealSuit from '../../assests/Garments/Suit/TealSuit.png';
 export default function index() {
-	const booksArray = [books, books1, books2, books3];
+	const Suits = [BlackSuit, BurgundySuit, charcoalSuit, GreySuit, TealSuit];
 	const settings = {
 		arrows: false,
 		accessibility: true,
@@ -29,16 +28,16 @@ export default function index() {
 		<Container fluid className="col-lg-12 mainOuterDiv">
 			<div>
 				<Card.Link href="#" style={{ borderRadius: '0', padding: '0' }}>
-					<img className="SemiCarousel_Image" src={BigBook} />
+					<img className="SemiCarousel_Image" src={BlackSuit} />
 					{/* <CardImg  */}
 				</Card.Link>
 			</div>
 			<Container className="col-lg-6">
 				<div className={'SemiCarousel_outerDiv'}>
 					<Slider {...settings}>
-						{booksArray.map((booksImage) => (
-							<div className="SemiCarousel" key={booksImage.toString()}>
-								<img className="SemiCarousel_Image" src={booksImage} />
+						{Suits.map((suits) => (
+							<div className="SemiCarousel" key={suits.toString()}>
+								<img className="SemiCarousel_Image" src={suits} />
 							</div>
 						))}
 					</Slider>

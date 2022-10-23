@@ -14,7 +14,7 @@ export default function index() {
 				<title>Social Wall</title>
 				<meta name="description" content="landing_page" />
 			</Helmet>
-			<div style={{ Height: '100%', Width: '100%' }}>
+			<div style={{ Width: '100%' }}>
 				<header>
 					<TheNavBar />
 				</header>

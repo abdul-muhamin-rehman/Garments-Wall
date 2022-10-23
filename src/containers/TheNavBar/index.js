@@ -6,7 +6,7 @@ export default function index() {
 	return (
 		<Navbar className="navbarLandPage  col-md-12 col-lg-12 ">
 			<Container>
-				<Navbar.Brand>Social Wall</Navbar.Brand>
+				<Navbar.Brand>Garments Wall</Navbar.Brand>
 				<div>
 					<Link to="/blogs">Blogs</Link>
 					<Link to="/login">Login</Link>
